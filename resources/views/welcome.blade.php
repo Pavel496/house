@@ -5,7 +5,7 @@
 
 	<section class="posts container">
 		@if (isset($title))
-			<h3>{{ $title }}</h3>
+			<h1>{{ $title }}</h1>
 		@endif
 
 		@foreach($posts as $post)

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Zendero</title>
+	<title>{{config('app.name')}}</title>
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/framework.css">
 	<link rel="stylesheet" href="/css/style.css">
@@ -23,9 +23,9 @@
 				<div class="pure-menu"></div>
 				<ul class="container-flex list-unstyled">
 					<li><a href="/" class="text-uppercase">Home</a></li>
-					<li><a href="about.html" class="text-uppercase">About</a></li>
+					{{-- <li><a href="about.html" class="text-uppercase">About</a></li>
 					<li><a href="archive.html" class="text-uppercase">Archive</a></li>
-					<li><a href="contact.html" class="text-uppercase">Contact</a></li>
+					<li><a href="contact.html" class="text-uppercase">Contact</a></li> --}}
 				</ul>
 			</nav>
 		</div>
@@ -37,24 +37,24 @@
 		<footer>
 			<div class="container">
 				<figure class="logo"><img src="/img/key1.png" alt=""></figure>
-				<nav>
+				{{-- <nav>
 					<ul class="container-flex space-center list-unstyled">
 						<li><a href="index.html" class="text-uppercase c-white">home</a></li>
 						<li><a href="about.html" class="text-uppercase c-white">about</a></li>
 						<li><a href="archive.html" class="text-uppercase c-white">archive</a></li>
 						<li><a href="contact.html" class="text-uppercase c-white">contact</a></li>
 					</ul>
-				</nav>
+				</nav> --}}
 				<div class="divider-2"></div>
-				<p>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
-				<div class="divider-2" style="width: 80%;"></div>
-				<p>© 2018 - Country House Realty. All Rights Reserved. Designed & Developed by <span class="c-white">Agencia De La Web</span></p>
-				<ul class="social-media-footer list-unstyled">
+				{{-- <p>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</p>
+				<div class="divider-2" style="width: 80%;"></div> --}}
+				<p>© 2018 - Country House Realty. All Rights Reserved. Designed & Developed by <span class="c-white">Country House Realty</span></p>
+				{{-- <ul class="social-media-footer list-unstyled">
 					<li><a href="#" class="fb"></a></li>
 					<li><a href="#" class="tw"></a></li>
 					<li><a href="#" class="in"></a></li>
 					<li><a href="#" class="pn"></a></li>
-				</ul>
+				</ul> --}}
 			</div>
 		</footer>
 	</section>

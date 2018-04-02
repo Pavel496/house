@@ -42,7 +42,7 @@
         <div class="box box-primary">
             <div class="box-body">
               <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
-                <label>Title</label>
+                <label>Заголовок</label>
                 <input name="title" class="form-control" value="{{ old('title', $post->title) }}" placeholder= "Enter title of post">
 
                 {!! $errors->first('title', '<span class="help-block">:message</span>') !!}
@@ -63,7 +63,7 @@
 
               </div>
               <div class="form-group {{ $errors->has('body') ? 'has-error' : '' }}">
-                <label>Body</label>
+                <label>Описание объекта</label>
                 <textarea rows="7" id="editor" name="body" class="form-control" placeholder= "Enter body of post">{{ old('body', $post->body) }}</textarea>
 
                 {!! $errors->first('body', '<span class="help-block">:message</span>') !!}
@@ -130,7 +130,7 @@
 
 
             <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
-              <label>Category</label>
+              <label>Категория</label>
               <select name="category_id" class="form-control select2">
                 <option value="">Select category</option>
                   @foreach ($categories as $category)
@@ -161,13 +161,13 @@
               <input name="salary" class="form-control" value="{{ old('salary', $post->salary) }}" placeholder= "Enter salary of post">
             </div>
 
-            <div class="form-group {{ $errors->has('excerpt') ? 'has-error' : '' }}">
+            {{-- <div class="form-group {{ $errors->has('excerpt') ? 'has-error' : '' }}">
               <label>Excerpt</label>
               <textarea name="excerpt" class="form-control" placeholder= "Enter excerpt of post">{{ old('excerpt', $post->excerpt) }}</textarea>
 
               {!! $errors->first('excerpt', '<span class="help-block">:message</span>') !!}
 
-            </div>
+            </div> --}}
 
             <div class="form-group">
               <div class="dropzone">
@@ -176,7 +176,7 @@
             </div>
 
             <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block">Save Publication</button>
+              <button type="submit" class="btn btn-primary btn-block">Сохранить публикацию</button>
             </div>
 
           </div>
@@ -218,7 +218,7 @@
       headers: {
         'X-CSRF-TOKEN': '{{ csrf_token() }}'
       },
-      dictDefaultMessage: 'Бросьте фото для загрузки'
+      dictDefaultMessage: 'Перетащите фото для загрузки'
     });
 
     myDropzone.on('error', function(file, res){
