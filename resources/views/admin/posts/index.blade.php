@@ -55,6 +55,8 @@
                               onclick="return confirm('Удалить эту публикацию?')"
                             ><i class="fa fa-times"></i></button>
                           </form>
+                        </td>
+                      </tr>
                     @endforeach
                   </tbody>
                 </table>

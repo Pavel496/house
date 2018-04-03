@@ -86,7 +86,7 @@
                     </div>
                     <input name="published_at"
                       class="form-control pull-right"
-                      value="{{ old('published_at', $post->published_at ? $post->published_at->format('d/M/Y') : null) }}"
+                      value="{{ old('published_at', $post->published_at ? $post->published_at->format('m/d/Y') : null) }}"
                       type="text"
                       id="datepicker">
                   </div>
@@ -184,7 +184,7 @@
     });
 
     CKEDITOR.replace('editor');
-    CKEDITOR.config.height = 185;
+    CKEDITOR.config.height = 180;
 
     var myDropzone = new Dropzone('.dropzone', {
       url: '/admin/posts/{{ $post->url }}/photos',

@@ -21,26 +21,32 @@
 
       @include('posts.header')
 
-      <h1>{{ $post->title }}</h1>
-        <div class="divider"></div>
+        <h1>{{ $post->title }}</h1>
+
+      @include('posts.tabla')
+
+        {{-- <div class="divider"></div> --}}
         <div class="image-w-text">
           {!! $post->body !!}
         </div>
 
-          <footer class="container-flex space-between">
+
+
+          {{-- <footer class="container-flex space-between">
               @include('partials.social-links', ['description'=>$post->title])
 
   						@include('posts.tags')
 
-          </footer>
-      <div class="comments">
+          </footer> --}}
+      {{-- <div class="comments">
       <div class="divider"></div>
         <div id="disqus_thread"></div>
 
           @include('partials.disqus-script')
 
-      </div><!-- .comments -->
+      </div><!-- .comments --> --}}
     </div>
+
 </article>
 @stop
 
@@ -49,7 +55,7 @@
 @endpush
 
 @push('scripts')
-  <script id="dsq-count-scr" src="//zendero.disqus.com/count.js" async></script>
+  {{-- <script id="dsq-count-scr" src="//zendero.disqus.com/count.js" async></script> --}}
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

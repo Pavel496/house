@@ -18,7 +18,8 @@
 	<div class="preload"></div>
 	<header class="space-inter">
 		<div class="container container-flex space-between">
-			<figure class="logo"><img src="/img/key.png" alt=""></figure>
+			<figure><img src="/img/key.png" alt="aaa"></figure>
+			{{-- <img src="{{ url($photo->url) }}" class="img-responsive" alt=""> --}}
 			<nav class="custom-wrapper" id="menu">
 				<div class="pure-menu"></div>
 				<ul class="container-flex list-unstyled">

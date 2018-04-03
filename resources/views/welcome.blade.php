@@ -37,10 +37,10 @@
 					<footer class="container-flex space-between">
 
 						<div class="read-more">
-							<a href="{{ route('posts.show', $post) }}" class="text-uppercase c-green">read more</a>
+							<a href="{{ route('posts.show', $post) }}" class="text-uppercase c-green">Подробнее...</a>
 						</div>
 
-						@include('posts.tags')
+						{{-- @include('posts.tags') --}}
 
 					</footer>
 
