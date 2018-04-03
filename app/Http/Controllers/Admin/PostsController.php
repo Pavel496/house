@@ -51,9 +51,17 @@ class PostsController extends Controller
   {
     $this->authorize('update', $post);
 
-    $dt = Carbon::parse($request->published_at);
-    $hide_at = $dt->addDays($request->days);
-    array_add($request, 'hide_at', $hide_at);
+    if ($request->filled('published_at') && $request->filled('days'))
+    {
+      $dt = Carbon::parse($request->published_at);
+      $hide_at = $dt->addDays($request->days);
+      array_add($request, 'hide_at', $hide_at);
+    }
+    else
+    {
+      array_add($request, 'hide_at', null);
+    }
+
 
     $post->update($request->all());
 

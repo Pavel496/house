@@ -1,6 +1,6 @@
 @extends('admin.layout')
 
-@section('header')
+{{-- @section('header')
   <h1>
     ROLES
     <small>List</small>
@@ -9,7 +9,7 @@
     <li><a href="{{ route('dashboard') }}"><i class="fa fa-home"></i> Dashboard</a></li>
     <li class="active">All roles</li>
   </ol>
-@endsection
+@endsection --}}
 
 @section('content')
   <div class="box box-primary">

@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
       User::truncate();
 
       $adminRole = Role::create(['name' => 'Admin', 'display_name' => 'Администратор']);
-      $writerRole = Role::create(['name' => 'Writer', 'display_name' => 'Писатель']);
+      $writerRole = Role::create(['name' => 'Moderator', 'display_name' => 'Модератор']);
 
       $viewPostsPermission = Permission::create([
         'name' => 'View posts', 'display_name' => 'Просмотр публикаций'
@@ -74,16 +74,16 @@ class UsersTableSeeder extends Seeder
       // ]);
 
       $admin = new User;
-      $admin->name = 'admin1';
-      $admin->email = 'admin1@admin1.com';
-      $admin->password = '123123';
+      $admin->name = 'admin';
+      $admin->email = 'admin@admin.com';
+      $admin->password = '9615031';
       $admin->save();
 
       $admin->assignRole($adminRole);
 
       $writer = new User;
-      $writer->name = 'admin2';
-      $writer->email = 'admin2@admin2.com';
+      $writer->name = 'user';
+      $writer->email = 'user@user.com';
       $writer->password = '123123';
       $writer->save();
 

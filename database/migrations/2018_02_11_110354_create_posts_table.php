@@ -18,15 +18,15 @@ class CreatePostsTable extends Migration
           $table->string('title');
           $table->string('url')->unique()->nullable();
 
-          $table->string('salary')->nullable();
-          $table->text('address')->nullable();
-          $table->string('photo')->nullable();
-          $table->string('phone')->nullable();
-          $table->string('email')->nullable();
+          $table->string('price')->nullable();
+          $table->string('distance')->nullable();
+          $table->string('housearea')->nullable();
+          $table->string('landarea')->nullable();
 
+          $table->text('location')->nullable();
           $table->text('excerpt')->nullable();
-          $table->mediumText('iframe')->nullable();
           $table->mediumText('body')->nullable();
+          $table->mediumText('iframe')->nullable();
 
           $table->unsignedInteger('category_id')->nullable();
           $table->unsignedInteger('user_id');

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 class Post extends Model
 {
         protected $fillable = [
-            'title', 'address', 'body', 'published_at', 'hide_at', 'email', 'phone', 'category_id', 'salary', 'days', 'user_id'
+            'title', 'price', 'distance', 'housearea', 'landarea', 'location', 'excerpt', 'body', 'category_id', 'user_id', 'days', 'published_at', 'hide_at'
         ];
 
         // protected $guarded = [];

@@ -8,21 +8,21 @@
   </li>
 
   <li class="treeview {{ setActiveRoute('admin.posts.index') }}">
-    <a href="#"><i class="fa fa-bars"></i> <span>Publications</span>
+    <a href="#"><i class="fa fa-bars"></i> <span>Публикации</span>
       <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
     </a>
     <ul class="treeview-menu">
       <li class="{{ setActiveRoute('admin.posts.index') }}">
-        <a href="{{ route('admin.posts.index') }}"><i class="fa fa-eye"></i> All posts</a>
+        <a href="{{ route('admin.posts.index') }}"><i class="fa fa-eye"></i> Все публикации</a>
       </li>
       @can('create', new App\Post)
         <li>
           @if (request()->is('admin/posts/*'))
-            <a href="{{ route('admin.posts.index', '#create') }}"><i class="fa fa-pencil"></i> Create post</a>
+            <a href="{{ route('admin.posts.index', '#create') }}"><i class="fa fa-pencil"></i> Создать публикацию</a>
           @else
-            <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Create post</a>
+            <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Создать публикацию</a>
           @endif
         </li>
       @endcan

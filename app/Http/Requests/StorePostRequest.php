@@ -25,13 +25,8 @@ class StorePostRequest extends FormRequest
     {
         return [
           'title' => 'required',
-          'address' => 'required',
-          'body' => 'required',
-          'email' => 'required',
-          'phone' => 'required',
+          'excerpt' => 'required',
           'category_id' => 'required',
-          'tags' => 'required',
-
         ];
     }
 }

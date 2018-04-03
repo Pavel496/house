@@ -34,7 +34,7 @@
                 @include('admin.permissions.checkboxes', ['model' => $user])
             </div>
 
-            <span class="help-block">Пароль для нового пользователя был сгенерирован и выслан по email</span>
+            {{-- <span class="help-block">Пароль для нового пользователя был сгенерирован и выслан по email</span> --}}
 
             <button class="btn btn-primary btn-block">Create user</button>
           </form>

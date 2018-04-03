@@ -1,16 +1,16 @@
 @extends('admin.layout')
 
-@section('header')
+{{-- @section('header')
   <h1>
     USERS
     <small>List</small>
   </h1>
   <ol class="breadcrumb">
-    <li><a href="{{ route('dashboard') }}"><i class="fa fa-home"></i> Dashboard</a></li>
+    <li><a href="{{ route('dashboard') }}"><i class="fa fa-home"></i> Dashboard</a></li> --}}
     {{-- <li><a href="{{ route('admin.users.create') }}"><i class="fa fa-pencil"></i> Create user</a></li> --}}
-    <li class="active">All users</li>
+    {{-- <li class="active">All users</li>
   </ol>
-@endsection
+@endsection --}}
 
 @section('content')
   <div class="box box-primary">
@@ -89,9 +89,9 @@
     $(function () {
       $('#users-table').DataTable(
         {
-          "language": {
-          "url": "http://cdn.datatables.net/plug-ins/1.10.16/i18n/Russian.json"
-          }
+          // "language": {
+          // "url": "http://cdn.datatables.net/plug-ins/1.10.16/i18n/Russian.json"
+          // }
       //   "paging": true,
       //   "lengthChange": false,
       //   "searching": false,

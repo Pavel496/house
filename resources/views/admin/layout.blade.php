@@ -188,7 +188,7 @@ desired effect
 
                 <p>
                   {{ auth()->user()->name }} - {{ auth()->user()->getRoleDisplayNames() }}
-                  <small>Member since {{ auth()->user()->created_at->format('d/M/Y') }}</small>
+                  <small>Участник с {{ auth()->user()->created_at->format('d/M/Y') }}</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -297,11 +297,11 @@ desired effect
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2018 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2018 <a href="#">Country House Realty</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
+  {{-- <aside class="control-sidebar control-sidebar-dark">
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
@@ -375,7 +375,7 @@ desired effect
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
+  <div class="control-sidebar-bg"></div> --}}
 </div>
 <!-- ./wrapper -->
 
