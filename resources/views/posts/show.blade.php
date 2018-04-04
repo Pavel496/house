@@ -23,6 +23,10 @@
 
         <h1>{{ $post->title }}</h1>
 
+        <div style="width: 250px; height: 250px;">
+    			{!! Mapper::render() !!}
+    		</div>
+        <br>
       @include('posts.tabla')
 
         {{-- <div class="divider"></div> --}}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use Illuminate\Http\Request;
 use Mapper;
 
@@ -10,11 +11,11 @@ class MapController extends Controller
 
   public function index()
   {
-    $my1 = 59.548178;
-    $my2 = 30.090025;
+    $post = Post::find(1);
+    $coordinates = explode(", ", $post->location);
 
-    Mapper::map($my1, $my2);
+    Mapper::map($coordinates[0], $coordinates[1]);
 
-    return view('map');
+    return view('map', compact('post'));
   }
 }

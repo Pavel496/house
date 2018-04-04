@@ -51,7 +51,7 @@
               <div class="form-group">
                 <label>Локация</label>
                 {{-- <textarea name="location" class="form-control" placeholder= "Введите координаты">{{ old('location', $post->location) }}</textarea> --}}
-                <input name="location" class="form-control" value="{{ old('location', $post->location) }}" placeholder= "Введите координаты">
+                <input name="location" class="form-control" value="{{ old('location', $post->location) }}" placeholder= "Скопируйте координаты с Google maps">
               </div>
               <div class="form-group {{ $errors->has('excerpt') ? 'has-error' : '' }}">
                 <label>Краткое описание</label>

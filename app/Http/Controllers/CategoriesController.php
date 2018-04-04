@@ -11,7 +11,7 @@ class CategoriesController extends Controller
     {
       return view('welcome', [
         'title' => $category->name,
-        'posts' => $category->posts()->paginate(1)
+        'posts' => $category->posts()->paginate()
       ]);
     }
 
