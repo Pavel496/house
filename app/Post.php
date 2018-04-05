@@ -83,7 +83,7 @@ class Post extends Model
 
         public function isPublished()
         {
-          return ! is_null($this->published_at) && $this->published_at < today();
+          return ! is_null($this->published_at) && $this->published_at <= today();
         }
 
         public static function create(array $attributes = [])

@@ -48,10 +48,11 @@
                 {!! $errors->first('title', '<span class="help-block">:message</span>') !!}
 
               </div>
-              <div class="form-group">
+              <div class="form-group {{ $errors->has('location') ? 'has-error' : '' }}">
                 <label>Локация</label>
                 {{-- <textarea name="location" class="form-control" placeholder= "Введите координаты">{{ old('location', $post->location) }}</textarea> --}}
                 <input name="location" class="form-control" value="{{ old('location', $post->location) }}" placeholder= "Скопируйте координаты с Google maps">
+                {!! $errors->first('location', '<span class="help-block">:message</span>') !!}
               </div>
               <div class="form-group {{ $errors->has('excerpt') ? 'has-error' : '' }}">
                 <label>Краткое описание</label>

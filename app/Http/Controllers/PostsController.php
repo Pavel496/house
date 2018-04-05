@@ -10,6 +10,7 @@ class PostsController extends Controller
 {
   public function show(Post $post)
   {
+    // dd($post);
     if ($post->isPublished() || auth()->check())
     {
       $coordinates = explode(", ", $post->location);
