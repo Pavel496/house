@@ -19,7 +19,7 @@
 
   @endforeach
     {{-- {{ $post->title }} --}}
-    ...
+    {{-- ... --}}
   </div>
 
   <!-- Controls -->

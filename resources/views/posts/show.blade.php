@@ -1,8 +1,14 @@
-@extends('layout')
+@extends('layouth')
 
 
 @section('content')
-<article class="post container">
+  {{-- <div class="main-content">
+    <div class="container-fluid"> --}}
+
+<article class="post container" style="
+  padding-left:0px;
+  padding-right:0px;
+">
 
 @include( $post->viewType() )
   {{-- @if ($post->photos->count() === 1)
@@ -17,11 +23,13 @@
     {{-- @if ($post->photos->count() === 1)
       <figure><img src="{{ $post->photos->first()->url }}" alt="" class="img-responsive"></figure>
     @endif --}}
+
+
     <div class="content-post">
 
       @include('posts.header')
 
-        <h1>{{ $post->title }}</h1>
+        <h2>{{ $post->title }}</h2>
 
         <div style="width: 250px; height: 250px;">
     			{!! Mapper::render() !!}
@@ -52,6 +60,8 @@
     </div>
 
 </article>
+{{-- </div>
+</div> --}}
 @stop
 
 @push('styles')

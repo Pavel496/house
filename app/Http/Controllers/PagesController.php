@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 
+
 class PagesController extends Controller
 {
   public function home()
@@ -12,6 +13,6 @@ class PagesController extends Controller
 
     $posts = Post::published()->paginate();
 
-    return view('welcome', compact('posts'));
+    return view('house', compact('posts'));
   }
 }
