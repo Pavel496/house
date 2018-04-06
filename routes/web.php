@@ -6,6 +6,7 @@
 // Route::get('/', 'MapController@index');
 Route::get('/', 'PagesController@home')->name('pages.home');
 // ->middleware('throttle:3')
+Route::get("my-search","SearchController@mySearch");
 
 Route::get('baza/{post}', 'PostsController@show')->name('posts.show');
 Route::get('categories/{category}', 'CategoriesController@show')->name('categories.show');

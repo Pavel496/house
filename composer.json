@@ -10,7 +10,8 @@
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "spatie/laravel-permission": "^2.9",
-        "cornford/googlmapper": "2.*"
+        "cornford/googlmapper": "2.*",
+        "nicolaslopezj/searchable": "1.*"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

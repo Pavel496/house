@@ -80,9 +80,9 @@
 			</div>
 			<!-- SEARCH FORM -->
 			<div class="big-searchbox">
-				<form method="post">
+				<form method="GET" action="{{ url('my-search') }}">
 					<i class="fa fa-search icon-search"></i>
-					<input type="text" class="form-control keyword">
+					<input type="text" class="form-control keyword" name="search" value="{{ old('search') }}" placeholder="Просто напишите, что хотите найти">
 					<button type="button" class="btn-close-searchbox"><i class="fa fa-close"></i></button>
 				</form>
 			</div>

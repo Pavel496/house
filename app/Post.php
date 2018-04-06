@@ -5,9 +5,32 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Nicolaslopezj\Searchable\SearchableTrait;
 
 class Post extends Model
 {
+        use SearchableTrait;
+
+        /**
+        * Searchable rules.
+        *
+        * @var array
+        */
+        protected $searchable = [
+           'columns' => [
+               'posts.title' => 10,
+               'posts.excerpt' => 10,
+               'posts.body' => 10,
+               // 'posts.address' => 7,
+               // 'posts.phone' => 7,
+               // 'posts.email' => 7,
+
+               //'users.email' => 5,
+               //'users.id' => 3,
+           ]
+        ];
+
+
         protected $fillable = [
             'title', 'price', 'distance', 'housearea', 'landarea', 'location', 'excerpt', 'body', 'category_id', 'user_id', 'days', 'published_at', 'hide_at'
         ];
