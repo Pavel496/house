@@ -29,14 +29,14 @@
 
       @include('posts.header')
 
-        <h2>{{ $post->title }}</h2>
+        <h3>{{ $post->title }}</h3>
 
-        <div style="width: 250px; height: 250px;">
+        <div style="width: 730px; height: 170px;">
     			{!! Mapper::render() !!}
     		</div>
         <br>
       @include('posts.tabla')
-
+<br>
         {{-- <div class="divider"></div> --}}
         <div class="image-w-text">
           {!! $post->body !!}

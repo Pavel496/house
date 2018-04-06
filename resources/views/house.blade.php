@@ -27,16 +27,18 @@
 				<!-- LATEST -->
 				<section>
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">LATEST POSTS</h2>
+						<h2 class="section-heading pull-left">НОВОЕ</h2>
 						<a href="#" class="see-all-posts pull-right">See all latest posts <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->
 					<div class="posts-carousel">
 						@foreach($posts as $post)
 						<div class="post-entry">
-							<a href="#"><img src="house/img/blog/blog-home-img4.png" class="img-responsive" alt="Post Thumbnail"></a>
+							{{-- @include('posts.photo') --}}
+							<a href="{{ route('posts.show', $post) }}"><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt="Post Thumbnail"></a>
 							<div class="post-info">
 								<h3 class="post-title"><a href="#">{{ $post->title }}</a></h3>
+								{{-- @include('posts.tabla') --}}
 								<p class="post-excerpt">{{ $post->excerpt }}</p>
 								<span class="post-meta"><i class="fa fa-calendar-o"></i> {{ $post->published_at->format('M d, Y') }}</span>
 								<a href="{{ route('posts.show', $post) }}" class="read-more pull-right">Подробнее...</a>
@@ -108,7 +110,7 @@
 				<!-- CREATIVE -->
 				<section>
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">CREATIVE</h2>
+						<h2 class="section-heading pull-left">ПРОДАЖА</h2>
 						<a href="#" class="see-all-posts pull-right">See all posts in Creative <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->
@@ -183,7 +185,7 @@
 				<!-- APPS -->
 				<section>
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">APPS</h2>
+						<h2 class="section-heading pull-left">АРЕНДА</h2>
 						<a href="#" class="see-all-posts pull-right">See all posts in Apps <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->

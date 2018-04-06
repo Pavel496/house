@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Repute Blog - Responsive Bootstrap Blog Theme</title>
+	<title>Country House Realty</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Responsive Multipurpose Bootstrap Theme">
@@ -29,11 +29,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400italic,700,400,300' rel='stylesheet' type='text/css'>
 	<!-- FAVICONS -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/house/ico/repute144x144.png">
+	{{-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/house/ico/repute144x144.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/house/ico/repute114x114.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/house/ico/repute72x72.png">
 	<link rel="apple-touch-icon-precomposed" href="/house/ico/repute57x57.png">
-	<link rel="shortcut icon" href="/house/ico/favicon.png">
+	<link rel="shortcut icon" href="/house/ico/favicon.png"> --}}
 
   @stack('styles')
 
@@ -50,7 +50,7 @@
 						<span class="sr-only">Toggle Navigation</span>
 						<i class="fa fa-bars"></i>
 					</button>
-					<a href="index.html">
+					<a href="/">
 						<img src="/house/img/logo/key3.jpg" alt="Repute Blog - Responsive Bootstrap Blog Theme">
 						<!-- <span class="arrow-right"></span> -->
 					</a>
@@ -58,10 +58,11 @@
 				<!-- MAIN NAVIGATION -->
 				<div id="main-nav" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#">CREATIVE</a></li>
-						<li><a href="#">APPS</a></li>
-						<li><a href="#">CORPORATE</a></li>
-						<li><a href="../index.html">MAIN THEME</a></li>
+						{{-- <li class="active"><a href="#">CREATIVE</a></li> --}}
+						<li><a href="/">ГЛАВНАЯ</a></li>
+						<li><a href="#">ПРОДАЖА</a></li>
+						<li><a href="#">АРЕНДА</a></li>
+						<li><a href="#">КОНТАКТЫ</a></li>
 						<li class="dropdown">
 							<a href="#" data-toggle="dropdown">MORE <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" role="menu">
@@ -75,6 +76,7 @@
 					</ul>
 				</div>
 				<!-- END MAIN NAVIGATION -->
+				<p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p>
 			</div>
 			<!-- SEARCH FORM -->
 			<div class="big-searchbox">
@@ -137,7 +139,7 @@
 				</div>
 				<!-- COPYRIGHT -->
 				<div class="copyright">
-					&copy; 2016 The Develovers. All Rights Reserved.
+					&copy; 2018 Country House Realty. All Rights Reserved.
 				</div>
 				<!-- END COPYRIGHT -->
 			</div>

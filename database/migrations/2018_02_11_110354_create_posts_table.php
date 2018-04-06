@@ -24,7 +24,7 @@ class CreatePostsTable extends Migration
           $table->string('landarea')->nullable();
 
           $table->text('location')->nullable();
-          $table->text('excerpt')->nullable();
+          $table->mediumText('excerpt')->nullable();
           $table->mediumText('body')->nullable();
           $table->mediumText('iframe')->nullable();
 

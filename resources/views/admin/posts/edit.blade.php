@@ -65,7 +65,7 @@
               </div>
               <div class="form-group">
                 <label>iFrame</label>
-                <textarea rows="2" id="editor" name="iframe" class="form-control" placeholder= "Введите iframe аудио или видео">{{ old('iframe', $post->iframe) }}</textarea>
+                <textarea name="iframe" class="form-control" placeholder= "Введите iframe аудио или видео">{{ old('iframe', $post->iframe) }}</textarea>
                 {{-- {!! $errors->first('iframe', '<span class="help-block">:message</span>') !!} --}}
               </div>
             </div>
