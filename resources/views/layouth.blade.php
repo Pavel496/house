@@ -46,14 +46,14 @@
 		<nav class="navbar navbar-default " role="navigation">
 			<div class="container-fluid">
 				<div class="navbar-header">
+					<a href="/">
+						<img src="/house/img/logo/key3.jpg" class="img-responsive" alt="Repute Blog - Responsive Bootstrap Blog Theme">
+						<!-- <span class="arrow-right"></span> -->
+					</a>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
 						<span class="sr-only">Toggle Navigation</span>
 						<i class="fa fa-bars"></i>
 					</button>
-					<a href="/">
-						<img src="/house/img/logo/key3.jpg" alt="Repute Blog - Responsive Bootstrap Blog Theme">
-						<!-- <span class="arrow-right"></span> -->
-					</a>
 				</div>
 				<!-- MAIN NAVIGATION -->
 				<div id="main-nav" class="navbar-collapse collapse">
@@ -89,6 +89,22 @@
 			<!-- END SEARCH FORM -->
 		</nav>
 		<!-- END NAVBAR -->
+
+		<div class="form-group" >
+			<div class="form-group">
+				{{-- <label class="col-xs-1 control-label">Select</label> --}}
+				<div class="col-md-1">
+					<select class="form-control">
+						<option value="cheese">Cheese</option>
+						<option value="tomatoes">Tomatoes</option>
+						<option value="mozarella">Mozzarella</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="pepperoni">Pepperoni</option>
+						<option value="onions">Onions</option>
+					</select>
+				</div>
+			</div>
+		</div>
 		<br><br>
 
     @yield('content')

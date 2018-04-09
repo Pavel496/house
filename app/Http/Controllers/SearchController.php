@@ -15,10 +15,10 @@ class SearchController extends Controller
 
     public function mySearch(Request $request)
     {
-
+dd($request->get('search'));
     	if($request->has('search')){
         // $mylink = false;
-        $posts = Post::search($request->get('search'))->orderBy('id', 'desc')->get();
+        $posts = Post::where('distance', '>', 15)->search($request->get('search'))->orderBy('id', 'desc')->get();
     	}else{
         // $mylink = true;
     		$posts = Post::orderBy('id', 'desc')->paginate();

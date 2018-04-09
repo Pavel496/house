@@ -31,7 +31,7 @@
 
         <h3>{{ $post->title }}</h3>
 
-        <div style="width: 730px; height: 170px;">
+        <div style="width: 300px; height: 200px;">
     			{!! Mapper::render() !!}
     		</div>
         <br>
