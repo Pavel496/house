@@ -2,6 +2,11 @@
 
 
 @section('content')
+
+
+	@include('posts.filter')
+
+	
 		<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">

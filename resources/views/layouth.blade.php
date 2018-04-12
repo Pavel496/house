@@ -76,7 +76,7 @@
 					</ul>
 				</div>
 				<!-- END MAIN NAVIGATION -->
-				<p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p>
+				{{-- <p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p> --}}
 			</div>
 			<!-- SEARCH FORM -->
 			<div class="big-searchbox">
@@ -90,22 +90,7 @@
 		</nav>
 		<!-- END NAVBAR -->
 
-		<div class="form-group" >
-			<div class="form-group">
-				{{-- <label class="col-xs-1 control-label">Select</label> --}}
-				<div class="col-md-1">
-					<select class="form-control">
-						<option value="cheese">Cheese</option>
-						<option value="tomatoes">Tomatoes</option>
-						<option value="mozarella">Mozzarella</option>
-						<option value="mushrooms">Mushrooms</option>
-						<option value="pepperoni">Pepperoni</option>
-						<option value="onions">Onions</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<br><br>
+		{{-- <br> --}}
 
     @yield('content')
 
