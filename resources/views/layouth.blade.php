@@ -42,8 +42,8 @@
 <body id="top">
 	<!-- WRAPPER -->
 	<div class="wrapper">
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-default " role="navigation">
+		<!-- NAVBAR img-post-audio.png -->
+		<nav class="navbar navbar-default " role="navigation" style="background-image:url(/img/Canvas.jpg)">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="/">
