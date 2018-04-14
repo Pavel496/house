@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
           $table->string('url')->unique()->nullable();
 
           $table->string('price')->nullable();
+          $table->string('currency')->nullable();
           $table->string('distance')->nullable();
           $table->string('housearea')->nullable();
           $table->string('landarea')->nullable();

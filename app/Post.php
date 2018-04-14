@@ -32,7 +32,7 @@ class Post extends Model
 
 
         protected $fillable = [
-            'title', 'price', 'distance', 'housearea', 'landarea', 'location', 'excerpt', 'body', 'category_id', 'user_id', 'days', 'published_at', 'hide_at'
+            'title', 'price', 'currency', 'distance', 'housearea', 'landarea', 'location', 'excerpt', 'body', 'category_id', 'user_id', 'days', 'published_at', 'hide_at'
         ];
 
         // protected $guarded = [];

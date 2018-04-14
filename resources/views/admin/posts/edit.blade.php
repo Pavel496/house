@@ -147,6 +147,19 @@
               <input name="price" class="form-control" value="{{ old('price', $post->price) }}" placeholder= "Введите стоимость">
             </div>
 
+            <div class="form-group {{ $errors->has('currency') ? 'has-error' : '' }}">
+              <label>Валюта</label>
+              <select name="currency" class="form-control select2">
+                <option value="">Выберите нужную валюту</option>
+                    <option {{ old('currency', $post->currency) == 'рубли' ? 'selected' : '' }}>рубли</option>
+                    <option {{ old('currency', $post->currency) == 'доллары' ? 'selected' : '' }}>доллары</option>
+                    <option {{ old('currency', $post->currency) == 'евро' ? 'selected' : '' }}>евро</option>
+                    <option {{ old('currency', $post->currency) == 'юани' ? 'selected' : '' }}>юани</option>
+                    <option {{ old('currency', $post->currency) == 'крипто' ? 'selected' : '' }}>крипто</option>
+              </select>
+              {!! $errors->first('currency', '<span class="help-block">:message</span>') !!}
+            </div>
+
             <div class="form-group">
               <div class="dropzone">
 
@@ -185,7 +198,7 @@
     });
 
     CKEDITOR.replace('editor');
-    CKEDITOR.config.height = 180;
+    CKEDITOR.config.height = 253;
 
     var myDropzone = new Dropzone('.dropzone', {
       url: '/admin/posts/{{ $post->url }}/photos',
