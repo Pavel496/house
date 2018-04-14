@@ -6,7 +6,7 @@
 
 	@include('posts.filter')
 
-	
+ {{-- style="background-image:url(/img/house.jpg)" --}}
 		<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
@@ -32,8 +32,8 @@
 				<!-- LATEST -->
 				<section>
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">НОВОЕ</h2>
-						<a href="#" class="see-all-posts pull-right">См. все объявления раздела НОВОЕ <i class="fa fa-long-arrow-right"></i></a>
+						<h2 class="section-heading pull-left">ВСЕ</h2>
+						<a href="#" class="see-all-posts pull-right">См. все объявления раздела ВСЕ <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->
 					<div class="posts-carousel">
@@ -43,7 +43,7 @@
 							<a href="{{ route('posts.show', $post) }}"><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt="Post Thumbnail"></a>
 							<div class="post-info">
 								<h3 class="post-title"><a href="#">{{ $post->title }}</a></h3>
-								{{-- @include('posts.tabla') --}}
+								@include('posts.tabla1')
 								<p class="post-excerpt">{{ $post->excerpt }}</p>
 								<span class="post-meta"><i class="fa fa-calendar-o"></i> {{ $post->published_at->format('M d, Y') }}</span>
 								<a href="{{ route('posts.show', $post) }}" class="read-more pull-right">Подробнее...</a>
@@ -69,7 +69,7 @@
 									<a href="{{ route('posts.show', $post) }}"><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt="Post Thumbnail"></a>
 									<div class="post-info">
 										<h3 class="post-title"><a href="#">{{ $post->title }}</a></h3>
-										{{-- @include('posts.tabla') --}}
+										@include('posts.tabla1')
 										<p class="post-excerpt">{{ $post->excerpt }}</p>
 										<span class="post-meta"><i class="fa fa-calendar-o"></i> {{ $post->published_at->format('M d, Y') }}</span>
 										<a href="{{ route('posts.show', $post) }}" class="read-more pull-right">Подробнее...</a>
@@ -97,7 +97,7 @@
 									<a href="{{ route('posts.show', $post) }}"><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt="Post Thumbnail"></a>
 									<div class="post-info">
 										<h3 class="post-title"><a href="#">{{ $post->title }}</a></h3>
-										{{-- @include('posts.tabla') --}}
+										@include('posts.tabla1')
 										<p class="post-excerpt">{{ $post->excerpt }}</p>
 										<span class="post-meta"><i class="fa fa-calendar-o"></i> {{ $post->published_at->format('M d, Y') }}</span>
 										<a href="{{ route('posts.show', $post) }}" class="read-more pull-right">Подробнее...</a>

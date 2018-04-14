@@ -41,9 +41,9 @@
 
 <body id="top">
 	<!-- WRAPPER -->
-	<div class="wrapper" style="background-image:url(/img/my1.jpg)">
+	<div class="wrapper">
 		<!-- NAVBAR img-post-audio.png -->
-		<nav class="navbar navbar-default " role="navigation" style="background-image:url(/img/Canvasb.jpg)">
+		<nav class="navbar navbar-default " role="navigation" style="background-image:url(/img/Canvas.jpg)">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="/">
@@ -96,7 +96,7 @@
 
 
 		<!-- FOOTER -->
-		<footer style="background-image:url(/img/Canvasb.jpg)">
+		<footer style="background-image:url(/img/Canvas.jpg)">
 			<div class="container-fluid">
 				<div class="row">
 					<!-- <div class="col-md-3">
