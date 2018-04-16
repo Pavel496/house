@@ -8,7 +8,7 @@
 
  {{-- style="background-image:url(/img/house.jpg)" --}}
 		<!-- MAIN CONTENT -->
-		<div class="main-content">
+		<div class="main-content" style="background-image:url(/img/my1.jpg)">
 			<div class="container-fluid">
 				<!-- FEATURED POSTS -->
 				<!-- <section class="featured-post-tiles clearfix">
