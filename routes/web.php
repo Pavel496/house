@@ -6,6 +6,9 @@
 // Route::get('/', 'MapController@index');
 Route::get('/', 'PagesController@home')->name('pages.home');
 // ->middleware('throttle:3')
+Route::get('/sale', 'PagesController@sale')->name('pages.sale');
+Route::get('/lease', 'PagesController@lease')->name('pages.lease');
+
 Route::get("my-search","SearchController@mySearch");
 Route::get("my-filter","SearchController@myFilter");
 

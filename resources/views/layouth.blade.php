@@ -40,10 +40,19 @@
 </head>
 
 <body id="top">
+	{{-- <div id="trailer" class="is_overlay">
+		<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+			<source src="/img/house.mp4"></source>
+
+		</video>
+	</div> --}}
+	{{-- <source src="book.webm" type="video/webm"></source> --}}
 	<!-- WRAPPER -->
 	<div class="wrapper">
+
+
 		<!-- NAVBAR img-post-audio.png -->
-		<nav class="navbar navbar-default " role="navigation" style="background-image:url(/img/Canvas.jpg)">
+		<nav class="navbar navbar-default " role="navigation" style="background-image:url(/img/Canvasb.jpg)">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="/">
@@ -55,27 +64,9 @@
 						<i class="fa fa-bars"></i>
 					</button>
 				</div>
-				<!-- MAIN NAVIGATION -->
-				<div id="main-nav" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						{{-- <li class="active"><a href="#">CREATIVE</a></li> --}}
-						<li><a href="/">ГЛАВНАЯ</a></li>
-						<li><a href="#">ПРОДАЖА</a></li>
-						<li><a href="#">АРЕНДА</a></li>
-						<li><a href="#">КОНТАКТЫ</a></li>
-						<li class="dropdown">
-							<a href="#" data-toggle="dropdown">MORE <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">E-COMMERCE</a></li>
-								<li><a href="#">START UP</a></li>
-								<li><a href="#">FINANCE</a></li>
-								<li><a href="#">STORY</a></li>
-							</ul>
-						</li>
-						<li><a class="btn btn-open-searchbox"><i class="fa fa-search"></i></a></li>
-					</ul>
-				</div>
-				<!-- END MAIN NAVIGATION -->
+
+				@include('posts.nav')
+
 				{{-- <p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p> --}}
 			</div>
 			<!-- SEARCH FORM -->
@@ -92,11 +83,13 @@
 
 		{{-- <br> --}}
 
+
+
     @yield('content')
 
 
 		<!-- FOOTER -->
-		<footer style="background-image:url(/img/Canvas.jpg)">
+		<footer style="background-image:url(/img/Canvasb.jpg)">
 			<div class="container-fluid">
 				<div class="row">
 					<!-- <div class="col-md-3">
@@ -160,6 +153,7 @@
 	<script src="/house/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script>
 	<script src="/house/js/repute-blog-scripts.js"></script>
   @stack('scripts')
+
 </body>
 
 </html>

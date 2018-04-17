@@ -2,8 +2,8 @@
 
 
 @section('content')
-  {{-- <div class="main-content">
-    <div class="container-fluid"> --}}
+  <div class="main-content" style="background-color:DarkOliveGreen;">
+    <div class="container-fluid">
 
 <br><br>
 
@@ -62,8 +62,8 @@
     </div>
 
 </article>
-{{-- </div>
-</div> --}}
+</div>
+</div>
 @stop
 
 @push('styles')

@@ -1,5 +1,5 @@
 <!-- CONTROL HEIGHT SIZING -->
-<div class="panel panel-default">
+<div class="panel panel-default" style="background-color:DarkOliveGreen; margin-bottom:0px">
   {{-- <div class="panel-heading">
     <h4>Control Height Sizing</h4>
   </div> --}}
@@ -55,7 +55,7 @@
 
         <div class="col-md-1">
         {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
-          <a href="/" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
+          <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
         </div>
 
       {{-- </div> --}}

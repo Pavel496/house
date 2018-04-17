@@ -6,10 +6,13 @@
 
 	@include('posts.filter')
 
- {{-- style="background-image:url(/img/house.jpg)" --}}
+ {{-- style="background-image:url(/img/house.jpg)"  style="background-image:url(/img/Canvasb.jpg)"--}}
 		<!-- MAIN CONTENT -->
-		<div class="main-content" style="background-image:url(/img/my1.jpg)">
-			<div class="container-fluid">
+{{-- {{dd($posts)}} --}}
+		<div class="main-content" style="background-color:DarkOliveGreen;">
+
+			<div class="container-fluid content">
+
 				<!-- FEATURED POSTS -->
 				<!-- <section class="featured-post-tiles clearfix">
 					<div class="featured-post featured-one">
@@ -30,10 +33,13 @@
 				</section> -->
 				<!-- END FEATURED POSTS -->
 				<!-- LATEST -->
+
+				{{-- @if (\Request::is('/')) --}}
 				<section>
+
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">ВСЕ</h2>
-						<a href="#" class="see-all-posts pull-right">См. все объявления раздела ВСЕ <i class="fa fa-long-arrow-right"></i></a>
+						<h2 class="section-heading pull-left" style="color:orange;">ВСЕ</h2>
+						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела ВСЕ <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->
 					<div class="posts-carousel">
@@ -53,12 +59,14 @@
 					</div>
 					<!-- end posts carousel -->
 				</section>
+				{{-- @endif --}}
 				<!-- END LATEST -->
 				<!-- CREATIVE -->
+				{{-- @if (\Request::is('sale')) --}}
 				<section>
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">ПРОДАЖА</h2>
-						<a href="#" class="see-all-posts pull-right">См. все объявления раздела ПРОДАЖА <i class="fa fa-long-arrow-right"></i></a>
+						<h2 class="section-heading pull-left" style="color:orange;">ПРОДАЖА</h2>
+						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела ПРОДАЖА <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->
 					<div class="posts-carousel">
@@ -80,12 +88,14 @@
 					</div>
 					<!-- end posts carousel -->
 				</section>
+				{{-- @endif --}}
 				<!-- END CREATIVE -->
 				<!-- APPS -->
+				{{-- @if (\Request::is('lease')) --}}
 				<section>
 					<div class="heading clearfix">
-						<h2 class="section-heading pull-left">АРЕНДА</h2>
-						<a href="#" class="see-all-posts pull-right">См. все объявления раздела АРЕНДА <i class="fa fa-long-arrow-right"></i></a>
+						<h2 class="section-heading pull-left" style="color:orange;">АРЕНДА</h2>
+						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела АРЕНДА <i class="fa fa-long-arrow-right"></i></a>
 					</div>
 					<!-- posts carousel -->
 					<div class="posts-carousel">
@@ -109,8 +119,11 @@
 					</div>
 					<!-- end posts carousel -->
 				</section>
+				{{-- @endif --}}
 				<!-- END APPS -->
+
 			</div>
+
 			<!-- NEWSLETTER -->
 			<!-- <div class="newsletter">
 				<div class="container">
@@ -129,5 +142,6 @@
 			</div> -->
 			<!-- END NEWSLETTER -->
 		</div>
+
 		<!-- END MAIN CONTENT -->
 @stop

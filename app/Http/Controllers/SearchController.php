@@ -38,7 +38,7 @@ class SearchController extends Controller
                 ->where('currency', $request->currency)
 
                 ->paginate();
-
+// dd($posts);
       $my_distancemin = $request->distancemin;
       $my_distancemax = $request->distancemax;
 
