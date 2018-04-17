@@ -3,7 +3,7 @@
   {{-- <div class="panel-heading">
     <h4>Control Height Sizing</h4>
   </div> --}}
-  <div class="panel-body">
+  <div class="panel-body" style="background-image:url(/img/Canvasb.jpg)">
     <div class="form-horizontal">
 
       <form  method="GET" action="{{ url('my-filter') }}">
@@ -14,28 +14,28 @@
         <input name="distancemin" style="border-color: maroon" class="form-control input-sm" type="text" value="{{ old('distancemin', $my_distancemin) }}" placeholder="МКАД min">
       </div>
       <div class="col-md-1">
-        <input name="distancemax" style="border-color: maroon" class="form-control input-sm" type="text" value="{{ old('distancemax', $my_distancemax) }}" placeholder="МКАД max">
+        <input name="distancemax" style="border-color: maroon" class="form-control" type="text" value="{{ old('distancemax', $my_distancemax) }}" placeholder="МКАД max">
       </div>
       {{-- <label for="exampleInputFile" class="col-md-1 control-label">S дома</label> --}}
       <div class="col-md-1">
-        <input name="houseareamin" style="border-color: khaki" class="form-control input-sm" type="text" value="{{ old('houseareamin', $my_houseareamin) }}" placeholder="S дома min">
+        <input name="houseareamin" style="border-color: khaki" class="form-control input-sm" type="text" value="{{ old('houseareamin', $my_houseareamin) }}" placeholder="S дом min">
       </div>
       <div class="col-md-1">
-        <input name="houseareamax" style="border-color: khaki" class="form-control input-sm" type="text" value="{{ old('houseareamax', $my_houseareamax) }}" placeholder="S дома max">
+        <input name="houseareamax" style="border-color: khaki" class="form-control" type="text" value="{{ old('houseareamax', $my_houseareamax) }}" placeholder="S дом max">
       </div>
       {{-- <label for="exampleInputFile" class="col-md-1 control-label">S участка</label> --}}
       <div class="col-md-1">
-        <input name="landareamin" style="border-color: maroon" class="form-control input-sm" type="text" value="{{ old('landareamin', $my_landareamin) }}" placeholder="S участ min">
+        <input name="landareamin" style="border-color: maroon" class="form-control input-sm" type="text" value="{{ old('landareamin', $my_landareamin) }}" placeholder="S уч min">
       </div>
       <div class="col-md-1">
-        <input name="landareamax" style="border-color: maroon" class="form-control input-sm" type="text" value="{{ old('landareamax', $my_landareamax) }}" placeholder="S участ max">
+        <input name="landareamax" style="border-color: maroon" class="form-control" type="text" value="{{ old('landareamax', $my_landareamax) }}" placeholder="S уч max">
       </div>
       {{-- <label for="exampleInputFile" class="col-md-1 control-label">Стоимость</label> --}}
       <div class="col-md-1">
         <input name="pricemin" style="border-color: khaki" class="form-control input-sm" type="text" value="{{ old('pricemin', $my_pricemin) }}" placeholder="Цена min">
       </div>
       <div class="col-md-1">
-        <input name="pricemax" style="border-color: khaki" class="form-control input-sm" type="text" value="{{ old('pricemax', $my_pricemax) }}" placeholder="Цена max">
+        <input name="pricemax" style="border-color: khaki" class="form-control" type="text" value="{{ old('pricemax', $my_pricemax) }}" placeholder="Цена max">
       </div>
 {{-- {{ PHP_INT_MAX }} --}}
       <div class="col-md-1">
@@ -48,9 +48,19 @@
         </select>
       </div>
 
-        <div class="col-md-1 col-md-offset-1">
+        {{-- <div class="col-md-1 col-md-offset-1"> --}}
         {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
-          <input type="submit"  class="btn btn-warning input-sm" value="Фильтр">
+          <input type="submit" id="submit-form" class="hidden" >
+        {{-- </div> --}}
+
+        <div class="col-md-1">
+        {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
+          <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
+        </div>
+
+        <div class="col-md-1">
+        {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
+          <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
         </div>
 
         <div class="col-md-1">

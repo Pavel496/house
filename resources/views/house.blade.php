@@ -37,10 +37,10 @@
 				{{-- @if (\Request::is('/')) --}}
 				<section>
 
-					<div class="heading clearfix">
+					{{-- <div class="heading clearfix">
 						<h2 class="section-heading pull-left" style="color:orange;">ВСЕ</h2>
 						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела ВСЕ <i class="fa fa-long-arrow-right"></i></a>
-					</div>
+					</div> --}}
 					<!-- posts carousel -->
 					<div class="posts-carousel">
 						@foreach($posts as $post)

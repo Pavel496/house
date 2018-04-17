@@ -55,8 +55,8 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="/">
-						<img src="/house/img/logo/key3.jpg" class="img-responsive" alt="Repute Blog - Responsive Bootstrap Blog Theme">
-						<!-- <span class="arrow-right"></span> -->
+						<img src="/img/3.jpg" class="img-responsive img-circle" alt="User Image">
+
 					</a>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
 						<span class="sr-only">Toggle Navigation</span>
@@ -91,14 +91,28 @@
 		<footer style="background-image:url(/img/Canvasb.jpg)">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-3 col-md-offset-10">
-						<h3 class="footer-heading" style="color:PaleGoldenRod">CONTACT US</h3>
+					<div class="col-md-5 col-md-offset-8">
+						<h3 class="footer-heading" style="color:PaleGoldenRod">О нас</h3>
+
+						{{-- <div class="pull-left">
+							<img src="/img/3.jpg" class="img-circle" alt="User Image">
+						</div> --}}
+
+						{{-- <img src="/img/3.jpg" class="user-image" alt="User Image"> --}}
+						<!-- hidden-xs hides the username on small devices so only the image appears. -->
+						{{-- <span class="hidden-xs"></span> --}}
 						<address class="margin-bottom-30px">
-							<ul class="list-unstyled" style="color:PaleGoldenRod">
-								<li>1234 North Main Street
-									<br/> New York, NY 222222</li>
-								<li>Phone: (1800) 765 - 4321</li>
-								<li>Email: email@yourdomain.com</li>
+							<ul class="list-unstyled" style="color:orange">
+								<li>Наше агентство недвижимости предоставляет услуги
+                  <br/> по покупке, продаже, сдаче в аренду недвижимости
+									<br/> в Москве и ближнем Подмосковье,
+									<br/> в том числе осуществляет юридическое сопровождение сделок.</li>
+								<li>Более 15-ти лет на рынке,  нас рекомендуют друзьям. </li>
+								<li>Основными клиентами являются физические лица,</li>
+                <li> но также оказываем услуги и юридическим лицам.</li>
+								<li>Наше кредо - грамотная работа и  конфиденциальность,</li>
+                <li>гибкость  к внешним условиям и их изменению.</li>
+								<li>Будем рады сотрудничеству!</li>
 							</ul>
 						</address>
 					</div>
