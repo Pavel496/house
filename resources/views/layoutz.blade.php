@@ -64,7 +64,7 @@
 					</button>
 				</div>
 
-				@include('posts.nav')
+				@include('posts.glavnav')
 
 				{{-- <p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p> --}}
 			</div>

@@ -26,7 +26,7 @@
 
 				<div class="content-post">
 
-      		@include('posts.header')
+      		@include('posts.postheader')
 
 					<h1>{{ $post->title }}</h1>
 

@@ -56,16 +56,18 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a href="/">
-						<img src="/house/img/logo/key3.jpg" class="img-responsive" alt="Repute Blog - Responsive Bootstrap Blog Theme">
-						<!-- <span class="arrow-right"></span> -->
+						<img src="/img/3.jpg" class="img-responsive img-circle" alt="User Image">
 					</a>
+					{{-- <a href="/">
+						<img src="/house/img/logo/key3.jpg" class="img-responsive" alt="Repute Blog - Responsive Bootstrap Blog Theme">
+					</a> --}}
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
 						<span class="sr-only">Toggle Navigation</span>
 						<i class="fa fa-bars"></i>
 					</button>
 				</div>
 
-				@include('posts.nav')
+				@include('posts.objnav')
 
 				{{-- <p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p> --}}
 			</div>

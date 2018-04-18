@@ -29,7 +29,7 @@
 
     <div class="content-post">
 
-      @include('posts.header')
+      @include('posts.postheader')
 
         <h3>{{ $post->title }}</h3>
 

@@ -6,7 +6,7 @@
   <div class="panel-body" style="background-image:url(/img/Canvasb.jpg)">
     <div class="form-horizontal">
 
-      <form  method="GET" action="{{ url('my-filter') }}">
+      <form id="myForm" method="GET" action="{{ url('my-filter') }}">
  {{-- value="{{ old('distancemin', $posts->my_distancemin) }}" --}}
       {{-- <div class="form-group"> --}}
       {{-- <label for="exampleInputFile" class="col-md-1 control-label">от МКАД</label> --}}
@@ -75,6 +75,16 @@
     </div>
   </div>
 </div>
+
+@push('scripts')
+  <script type="text/javascript">
+      $(document).ready(function() {
+         $("#myButton").click(function() {
+             $("#myForm").submit();
+         });
+      });
+  </script>
+@endpush
 <!-- END CONTROL HEIGHT SIZING -->
 
 {{-- <label for="sel1" class="col-md-1 control-label">от МКАД (км)</label>
