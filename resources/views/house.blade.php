@@ -37,10 +37,10 @@
 				{{-- @if (\Request::is('/')) --}}
 				<section>
 
-					{{-- <div class="heading clearfix">
-						<h2 class="section-heading pull-left" style="color:orange;">ВСЕ</h2>
-						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела ВСЕ <i class="fa fa-long-arrow-right"></i></a>
-					</div> --}}
+					<div class="heading clearfix">
+						<h2 class="section-heading pull-left" style="color:orange;">{{ $categories[$my_category_id-1]->name }}</h2>
+						<a href="#" class="see-all-posts pull-right" style="color:orange;">Смотреть все объявления <i class="fa fa-long-arrow-right"></i></a>
+					</div>
 					<!-- posts carousel -->
 					<div class="posts-carousel">
 						@foreach($posts as $post)
@@ -63,62 +63,16 @@
 				<!-- END LATEST -->
 				<!-- CREATIVE -->
 				{{-- @if (\Request::is('sale')) --}}
-				<section>
-					<div class="heading clearfix">
-						<h2 class="section-heading pull-left" style="color:orange;">ПРОДАЖА</h2>
-						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела ПРОДАЖА <i class="fa fa-long-arrow-right"></i></a>
-					</div>
-					<!-- posts carousel -->
-					<div class="posts-carousel">
-						@foreach($posts as $post)
-							@if ($post->category_id === 1)
-								<div class="post-entry">
-									{{-- @include('posts.photo') --}}
-									<a href="{{ route('posts.show', $post) }}"><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt="Post Thumbnail"></a>
-									<div class="post-info">
-										<h3 class="post-title"><a href="#">{{ $post->title }}</a></h3>
-										@include('posts.tabla1')
-										<p class="post-excerpt">{{ $post->excerpt }}</p>
-										<span class="post-meta"><i class="fa fa-calendar-o"></i> {{ $post->published_at->format('M d, Y') }}</span>
-										<a href="{{ route('posts.show', $post) }}" class="read-more pull-right">Подробнее...</a>
-									</div>
-								</div>
-							@endif
-						@endforeach
-					</div>
-					<!-- end posts carousel -->
-				</section>
-				{{-- @endif --}}
-				<!-- END CREATIVE -->
-				<!-- APPS -->
-				{{-- @if (\Request::is('lease')) --}}
-				<section>
-					<div class="heading clearfix">
-						<h2 class="section-heading pull-left" style="color:orange;">АРЕНДА</h2>
-						<a href="#" class="see-all-posts pull-right" style="color:orange;">См. все объявления раздела АРЕНДА <i class="fa fa-long-arrow-right"></i></a>
-					</div>
-					<!-- posts carousel -->
-					<div class="posts-carousel">
 
-						@foreach($posts as $post)
-							@if ($post->category_id === 2)
-								<div class="post-entry">
-									{{-- @include('posts.photo') --}}
-									<a href="{{ route('posts.show', $post) }}"><img src="{{ $post->photos->first()->url }}" class="img-responsive" alt="Post Thumbnail"></a>
-									<div class="post-info">
-										<h3 class="post-title"><a href="#">{{ $post->title }}</a></h3>
-										@include('posts.tabla1')
-										<p class="post-excerpt">{{ $post->excerpt }}</p>
-										<span class="post-meta"><i class="fa fa-calendar-o"></i> {{ $post->published_at->format('M d, Y') }}</span>
-										<a href="{{ route('posts.show', $post) }}" class="read-more pull-right">Подробнее...</a>
-									</div>
-								</div>
-							@endif
-						@endforeach
 
-					</div>
-					<!-- end posts carousel -->
-				</section>
+
+
+
+
+
+
+
+				
 				{{-- @endif --}}
 				<!-- END APPS -->
 

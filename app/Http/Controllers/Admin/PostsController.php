@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Tag;
 use App\Post;
 use App\Category;
+use App\Direction;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -42,13 +43,15 @@ class PostsController extends Controller
     return view('admin.posts.edit', [
           'post' => $post,
           'tags' => Tag::all(),
-          'categories' => Category::all()
+          'categories' => Category::all(),
+          'directions' => Direction::all()
         ]);
 
   }
 
   public function update(Post $post, StorePostRequest $request)
   {
+    // dd($post);
     $this->authorize('update', $post);
 
     if ($request->filled('published_at') && $request->filled('days'))

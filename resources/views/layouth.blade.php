@@ -71,15 +71,17 @@
 
 				{{-- <p style="font-size:12px;color:black;text-align:center;">Здесь будут наши адрес, телефоны и т.д. (для оперативности)</p> --}}
 			</div>
+
 			<!-- SEARCH FORM -->
-			<div class="big-searchbox">
+			{{-- <div class="big-searchbox">
 				<form method="GET" action="{{ url('my-search') }}">
 					<i class="fa fa-search icon-search"></i>
 					<input type="text" class="form-control keyword" name="search" value="{{ old('search') }}" placeholder="Просто напишите, что хотите найти">
 					<button type="button" class="btn-close-searchbox"><i class="fa fa-close"></i></button>
 				</form>
-			</div>
+			</div> --}}
 			<!-- END SEARCH FORM -->
+			
 		</nav>
 		<!-- END NAVBAR -->
 

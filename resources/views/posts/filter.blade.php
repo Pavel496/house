@@ -48,27 +48,31 @@
         </select>
       </div>
 
+      <div class="col-md-1">
+        <select name="category_id" class="form-control input-sm">
+            @foreach ($categories as $category)
+              <option value="{{ $category->id }}" {{ old('category_id', $my_category_id) == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+            @endforeach
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <select name="direction_id" class="form-control input-sm">
+            @foreach ($directions as $direction)
+              <option value="{{ $direction->id }}" {{ old('category_id', $my_direction_id) == $direction->id ? 'selected' : '' }}>{{ $direction->name }}</option>
+            @endforeach
+        </select>
+      </div>
+
         {{-- <div class="col-md-1 col-md-offset-1"> --}}
         {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
           <input type="submit" id="submit-form" class="hidden" >
         {{-- </div> --}}
 
-        <div class="col-md-1">
+        {{-- <div class="col-md-1"> --}}
         {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
-          <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
-        </div>
-
-        <div class="col-md-1">
-        {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
-          <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
-        </div>
-
-        <div class="col-md-1">
-        {{-- <button type="button" class="btn-close-filter"><i class="fa fa-close"></i></button> --}}
-          <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a>
-        </div>
-
-      {{-- </div> --}}
+          {{-- <a href="/sale" class="btn btn-default btn-sm" role="button">Сброс фильтра</a> --}}
+        {{-- </div> --}}
 
     </form>
 

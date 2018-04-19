@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Category;
+use App\Direction;
 
 class SearchController extends Controller
 {
@@ -36,9 +38,14 @@ class SearchController extends Controller
                 ->where('price', '<=', (int)($request->pricemax ? $request->pricemax : PHP_INT_MAX))
 
                 ->where('currency', $request->currency)
+                ->where('category_id', $request->category_id)
+                ->where('direction_id', $request->direction_id)
 
                 ->paginate();
-// dd($posts);
+
+      $directions = Direction::all();
+      $categories = Category::all();
+
       $my_distancemin = $request->distancemin;
       $my_distancemax = $request->distancemax;
 
@@ -52,12 +59,15 @@ class SearchController extends Controller
       $my_pricemax = $request->pricemax;
 
       $my_currency = $request->currency;
+      $my_category_id = $request->category_id;
+      $my_direction_id = $request->direction_id;
 
-      return view('house', compact('posts', 'my_distancemin', 'my_distancemax',
+      return view('house', compact('posts', 'categories', 'directions',
+                                            'my_distancemin', 'my_distancemax',
                                             'my_houseareamin', 'my_houseareamax',
                                             'my_landareamin', 'my_landareamax',
                                             'my_pricemin', 'my_pricemax',
-                                            'my_currency'));
+                                            'my_currency', 'my_category_id', 'my_direction_id'));
     }
 
 }

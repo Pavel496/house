@@ -20,5 +20,10 @@
     <td>{{ $post->price }}</td>
     <td>{{ $post->currency }}</td>
   </tr>
+  <tr>
+    <td>Направление</td>
+    <td colspan="2">{{ $post->direction->name }}</td>
+    {{-- <td></td> --}}
+  </tr>
   </tbody>
 </table>

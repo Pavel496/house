@@ -1,6 +1,6 @@
 <!-- MAIN NAVIGATION -->
 {{-- <div class="row"> --}}
-<div class="col-md-5" style="color:white; padding:30px;text-align:center;">
+<div class="col-md-5" style="color:white; padding:30px;text-align:right;">
 <h2 style="color:DarkRed;"><strong>АГЕНСТВО НЕДВИЖИМОСТИ</strong></h2>
 {{-- <p>ГЛАВНАЯ</p> --}}
 {{-- <a>ГЛАВНАЯ</a> --}}
@@ -24,7 +24,9 @@
         <li><a href="#">STORY</a></li>
       </ul>
     </li> --}}
-    <li><a class="btn btn-open-searchbox"><i class="fa fa-search"></i></a></li>
+
+    {{-- <li><a class="btn btn-open-searchbox"><i class="fa fa-search"></i></a></li> кнопка Поиск--}}
+
   </ul>
 </div>
 {{-- </div> --}}

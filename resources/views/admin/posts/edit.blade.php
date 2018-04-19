@@ -112,6 +112,19 @@
               </select>
               {!! $errors->first('category_id', '<span class="help-block">:message</span>') !!}
             </div>
+
+            <div class="form-group {{ $errors->has('direction_id') ? 'has-error' : '' }}">
+              <label>Направление</label>
+              <select name="direction_id" class="form-control select2">
+                <option value="">Выберите нужное направление</option>
+                  @foreach ($directions as $direction)
+                    <option value="{{ $direction->id }}" {{ old('direction_id', $post->direction_id) == $direction->id ? 'selected' : '' }}>{{ $direction->name }}</option>
+                  @endforeach
+              </select>
+              {!! $errors->first('direction_id', '<span class="help-block">:message</span>') !!}
+            </div>
+
+
             {{-- <div class="form-group {{ $errors->has('tags') ? 'has-error' : '' }}">
               <label>Tags</label>
               <select name="tags[]" class="form-control select2"
@@ -198,7 +211,7 @@
     });
 
     CKEDITOR.replace('editor');
-    CKEDITOR.config.height = 253;
+    CKEDITOR.config.height = 327;
 
     var myDropzone = new Dropzone('.dropzone', {
       url: '/admin/posts/{{ $post->url }}/photos',

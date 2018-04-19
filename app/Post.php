@@ -32,7 +32,7 @@ class Post extends Model
 
 
         protected $fillable = [
-            'title', 'price', 'currency', 'distance', 'housearea', 'landarea', 'location', 'excerpt', 'body', 'category_id', 'user_id', 'days', 'published_at', 'hide_at'
+            'title', 'price', 'currency', 'distance', 'housearea', 'landarea', 'location', 'excerpt', 'body', 'category_id', 'direction_id', 'user_id', 'days', 'published_at', 'hide_at'
         ];
 
         // protected $guarded = [];
@@ -62,6 +62,13 @@ class Post extends Model
         {
 
             return $this->belongsTo(Category::class);
+
+        }
+
+        public function direction()
+        {
+
+            return $this->belongsTo(Direction::class);
 
         }
 

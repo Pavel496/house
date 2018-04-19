@@ -28,6 +28,7 @@ class StorePostRequest extends FormRequest
           'location' => 'required',
           'excerpt' => 'required',
           'category_id' => 'required',
+          'direction_id' => 'required',
         ];
     }
 }
