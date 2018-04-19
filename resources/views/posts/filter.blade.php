@@ -10,6 +10,23 @@
  {{-- value="{{ old('distancemin', $posts->my_distancemin) }}" --}}
       {{-- <div class="form-group"> --}}
       {{-- <label for="exampleInputFile" class="col-md-1 control-label">от МКАД</label> --}}
+
+      <div class="col-md-1">
+        <select name="category_id" class="form-control input-sm">
+            @foreach ($categories as $category)
+              <option value="{{ $category->id }}" {{ old('category_id', $my_category_id) == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+            @endforeach
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <select name="direction_id" class="form-control input-sm">
+            @foreach ($directions as $direction)
+              <option value="{{ $direction->id }}" {{ old('category_id', $my_direction_id) == $direction->id ? 'selected' : '' }}>{{ $direction->name }}</option>
+            @endforeach
+        </select>
+      </div>
+
       <div class="col-md-1">
         <input name="distancemin" style="border-color: maroon" class="form-control input-sm" type="text" value="{{ old('distancemin', $my_distancemin) }}" placeholder="МКАД min">
       </div>
@@ -45,22 +62,6 @@
           <option value="{{ $curr = 'евро' }}" {{ old('currency', $my_currency) == $curr ? 'selected' : '' }}>{{$curr}}</option>
           <option value="{{ $curr = 'юани' }}" {{ old('currency', $my_currency) == $curr ? 'selected' : '' }}>{{$curr}}</option>
           <option value="{{ $curr = 'крипто' }}" {{ old('currency', $my_currency) == $curr ? 'selected' : '' }}>{{$curr}}</option>
-        </select>
-      </div>
-
-      <div class="col-md-1">
-        <select name="category_id" class="form-control input-sm">
-            @foreach ($categories as $category)
-              <option value="{{ $category->id }}" {{ old('category_id', $my_category_id) == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
-            @endforeach
-        </select>
-      </div>
-
-      <div class="col-md-2">
-        <select name="direction_id" class="form-control input-sm">
-            @foreach ($directions as $direction)
-              <option value="{{ $direction->id }}" {{ old('category_id', $my_direction_id) == $direction->id ? 'selected' : '' }}>{{ $direction->name }}</option>
-            @endforeach
         </select>
       </div>
 
